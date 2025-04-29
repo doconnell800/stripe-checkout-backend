@@ -20,8 +20,8 @@ app.post("/create-checkout-session", async (req, res) => {
           quantity: 1,
         },
       ],
-      success_url: "https://your-site.com/success",
-      cancel_url: "https://your-site.com/cancel",
+      success_url: "https://kitted.co/payment-success.html",
+      cancel_url: "https://kitted.co/payment-cancel.html",
     });
 
     res.json({ url: session.url });
